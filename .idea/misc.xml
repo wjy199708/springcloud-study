@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="MavenProjectsManager">
+    <option name="originalFiles">
+      <list>
+        <option value="$PROJECT_DIR$/springcloudstudy/pom.xml" />
+        <option value="$PROJECT_DIR$/springcloudstudyproviderdept8001/pom.xml" />
+        <option value="$PROJECT_DIR$/springcloud-study-api/pom.xml" />
+        <option value="$PROJECT_DIR$/springcloud-study/pom.xml" />
+        <option value="$PROJECT_DIR$/springcloud-study-eureka-7002/pom.xml" />
+        <option value="$PROJECT_DIR$/springcloud-study-eureka-7003/pom.xml" />
+        <option value="$PROJECT_DIR$/springcloud-study-provider-dept-8002/pom.xml" />
+        <option value="$PROJECT_DIR$/springcloud-study-provider-dept-8003/pom.xml" />
+      </list>
+    </option>
+    <option name="ignoredFiles">
+      <set>
+        <option value="$PROJECT_DIR$/springcloud-study-consumer-netflix-hystrix/pom.xml" />
+        <option value="$PROJECT_DIR$/springcloud-study/springcloud-study-eureka-7001/pom.xml" />
+        <option value="$PROJECT_DIR$/springcloudstudy/springcloud-study-api/pom.xml" />
+      </set>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_12" default="false" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/out" />
+  </component>
+</project>

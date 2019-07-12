@@ -1,0 +1,38 @@
+server:
+  port: 8001
+
+#springboot下的整合mybatis
+mybatis:
+  type-aliases-package: com.wjy.springcloud.entities3
+  mapper-locations: classpath:mybatis/mapper/*.xml
+  config-location: classpath:mybatis/mybatis.cfg.xml
+
+#springboot下的整合spring
+spring:
+  application:
+    name: springcloud-study-dept   #这个名字就是对外暴露的微服务的名字
+  datasource:
+    driver-class-name: org.gjt.mm.mysql.Driver
+    username: root
+    password: root
+    url: jdbc:mysql://localhost:3306/springcloud-study?useSSL=false
+    dbcp2:
+      min-idle: 5
+      initial-size: 5
+      max-total: 10
+      max-wait-millis: 200
+    type: com.alibaba.druid.pool.DruidDataSource
+#配置eureka的项目服务的地址，让该8001的provider服务提供这知道该项目的微服务的项目的注册地址在哪里
+eureka:
+  client:
+    service-url:
+      defaultZone: http://eureka7001.com:7001/eureka,http://eureka7002.com:7002/eureka,http://eureka7003.com:7003/eureka
+  instance:
+    instance-id: springcloud-study-dept8001   #在eureka服务注册中心的实例名称，如果和其他的实例名称写重复了，就会导致重复注册，但是只显示唯一一个
+    prefer-ip-address: true
+info:
+  app.name: springcloud-study
+  company.name: www.wjy.com
+  build.artifactId: ${project.artifactId}
+  build.version: ${project.version}
+

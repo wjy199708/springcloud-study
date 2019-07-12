@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <artifactId>springcloud-study</artifactId>
+        <groupId>com.wjy.springcloud</groupId>
+        <version>1.0-SNAPSHOT</version>
+        <relativePath>../springcloud-study/pom.xml</relativePath>
+    </parent>
+    <modelVersion>4.0.0</modelVersion>
+
+    <artifactId>springcloud-study-api</artifactId>
+    <description>该maven工程主要用于管理项目的api接口</description>
+    <dependencies>
+        <!--lombok可以自动的生成一个类的getter  setter  无参或者多参的构造器，等等，并且再lombok 的支持下可以动态的进行修改参数，而不用
+        再自己去很麻烦的修改-->
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+        </dependency>
+        <!--添加feign相关的maven依赖支持-->
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-feign</artifactId>
+        </dependency>
+
+    </dependencies>
+    <!--maven clean执行之后可以让项目重新在本地生成新的jar包-->
+    <!--maven install将项目重新安装在本地-->
+    <!--以上两个操作可以让maven项目在本地具有最新的jar包-->
+
+</project>

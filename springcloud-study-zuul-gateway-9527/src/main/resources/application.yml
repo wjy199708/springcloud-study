@@ -1,0 +1,27 @@
+spring:
+  application:
+    name: springcloud-study-zuul-gateway
+server:
+  port: 9527
+eureka:
+  client:
+    service-url:
+      defaultZone:  http://eureka7001.com:7001/eureka/,http://eureka7002.com:7002/eureka/
+  instance:
+    instance-id: gateway-9527
+    prefer-ip-address: true
+
+#配置zuul路由网关相关
+zuul:
+  routes:
+    mydept.serviceId: springcloud-study-dept
+    mydept.path: /mydept/**
+  ignored-services: springcloud-study-dept
+  prefix: /wjy  #设置添加访问路径的前缀名称，设置之后，访问微服务时，必须添加该前缀才行
+
+
+info:
+  app.name: springcloud-study-zuul-gateway
+  company.name: www.gxs.com
+  build.artifactId: ${project.artifactId}
+  build.version: ${project.version}
