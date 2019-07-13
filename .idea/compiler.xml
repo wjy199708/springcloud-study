@@ -12,18 +12,20 @@
         <module name="springcloud-study-provider-dept-8003" />
         <module name="springcloud-study-provider-dept-8002" />
         <module name="springcloud-study-provider-dept-8001" />
+        <module name="springcloud-study-config-3344" />
+        <module name="springcloud-study-api" />
+        <module name="springcloud-study-eureka-7002" />
         <module name="springcloud-study-zuul-gateway-9527" />
         <module name="springcloud-study-consumer-dept-feign" />
         <module name="springcloud-study-eureka-7001" />
         <module name="springcloud-study-eureka-7003" />
-        <module name="springcloud-study-eureka-7002" />
-        <module name="springcloud-study-api" />
         <module name="springcloud-study-consumer-hystrix-dashboard" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="springcloud-study" target="1.8" />
       <module name="springcloud-study-api" target="1.8" />
+      <module name="springcloud-study-config-3344" target="1.8" />
       <module name="springcloud-study-consumer-dept-80" target="1.8" />
       <module name="springcloud-study-consumer-dept-feign" target="1.8" />
       <module name="springcloud-study-consumer-hystrix-dashboard" target="1.8" />

@@ -96,6 +96,7 @@
         <module>../springcloud-study-provider-dept-hystrix-8001</module>
         <module>../springcloud-study-consumer-hystrix-dashboard</module>
         <module>../springcloud-study-zuul-gateway-9527</module>
+        <module>../springcloud-study-config-3344</module>
     </modules>
 
     <build>
